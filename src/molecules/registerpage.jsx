@@ -2,7 +2,7 @@ import React from 'react'
 
 const Registerpage =() =>{
   return (
-    <div className='form-container'>
+    <div className='formContainer'>
         <div className='formWrapper'>
             <span className="logo">Placeme Chat</span>
             <span className="title">Register</span>
