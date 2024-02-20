@@ -1,9 +1,11 @@
 import React from 'react'
+import Navbar from "./Navbar"
 
 const Sidebar = () => {
   return (
-    <div>
-      Sidebar
+    <div className='sidebar'>
+    <Navbar />
+
     </div>
   )
 }
