@@ -1,5 +1,5 @@
 import React from 'react'
-import Add from "../img/addavatar.png"
+
 
 const Login =() =>{
   return (
@@ -15,7 +15,7 @@ const Login =() =>{
 
 <button>Sign In</button>
             </form>
-            <p>Do you have an account? Login</p>
+            <p> you don't  have an account? Register</p>
         </div>
     </div>
   )

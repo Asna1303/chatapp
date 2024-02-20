@@ -1,8 +1,10 @@
-import Registerpage from "./molecules/registerpage";
+// import Registerpage from "./molecules/registerpage";
+// import Login from "./molecules/loginpage";
+import Home from "./molecules/homepage";
 import "./style.scss"
 function App() {
   
-  return <Registerpage/>
+  return <Home/>
 }
 
 export default App;
