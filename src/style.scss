@@ -208,6 +208,7 @@
         .message{
           display: flex;
           gap:20px ;
+          margin-bottom: 20px;
 
           .messageInfo{
             display: flex;
@@ -222,10 +223,23 @@ img{
 }
           }
           .messageContent{
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p{
+              background-color: white;
+              padding: 10px 20px;
+              border-radius: 0px 10px 10px 10px;
+            }
             img{
               width: 50%;
 
             }
+
+          }
+          &.owner{
+            flex-direction: row-reverse;
 
           }
         }
