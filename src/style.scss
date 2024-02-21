@@ -204,6 +204,31 @@
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
+
+        .message{
+          display: flex;
+          gap:20px ;
+
+          .messageInfo{
+            display: flex;
+            flex-direction: column;
+            color: gray;
+            font-weight: 300;
+img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+          }
+          .messageContent{
+            img{
+              width: 50%;
+
+            }
+
+          }
+        }
        
       }
       .input{
