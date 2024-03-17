@@ -1,10 +1,11 @@
 import Login from "./molecules/loginpage";
-import Home from "./molecules/homepage";
 import Registerpage from "./molecules/registerpage";
 import "./style.scss";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
+import ChatScreen from "./molecules/ChatScreen";
+import Landing from "./molecules/landing";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -14,23 +15,24 @@ function App() {
       return <Navigate to="/login" />;
     }
 
-    return children
+    return children;
   };
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/">
+          <Route index element={<Landing />} />
           <Route
-            index
+            path="/chat"
             element={
               <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>
+                <ChatScreen />
+              </ProtectedRoute>
             }
           />
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Registerpage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Registerpage />} />
         </Route>
       </Routes>
     </BrowserRouter>
