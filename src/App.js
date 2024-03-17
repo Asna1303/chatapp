@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 import ChatScreen from "./molecules/ChatScreen";
 import Landing from "./molecules/landing";
+import Dashboard from "./molecules/Dashboard";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -23,14 +24,8 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Landing />} />
-          <Route
-            path="/chat"
-            element={
-              <ProtectedRoute>
-                <ChatScreen />
-              </ProtectedRoute>
-            }
-          />
+          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path="/chat" element={<ProtectedRoute><ChatScreen /></ProtectedRoute>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Registerpage />} />
         </Route>
