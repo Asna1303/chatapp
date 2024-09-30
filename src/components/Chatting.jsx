@@ -16,7 +16,7 @@ const Chatting = () => {
         <div className="chatIcons">
           <img src={Cam} alt="cam" />
           <img src={Add} alt="add" />
-          <img src={More} alt="" />
+          <img src={More} alt="more" />
         </div>
       </div>
       <Messages />
