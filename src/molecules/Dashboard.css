@@ -20,7 +20,7 @@ main{
 .top_section{
     display: flex;
     align-items:center;
-    padding:20px 15px;
+    padding:21px 15px;
 }
 .logo{
     font-size: 30px;
