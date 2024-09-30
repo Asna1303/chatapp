@@ -15,7 +15,7 @@ const Chatting = () => {
         <span>{data.user?.displayName}</span>
         <div className="chatIcons">
           <img src={Cam} alt="cam" />
-          <img src={Add} alt="" />
+          <img src={Add} alt="add" />
           <img src={More} alt="" />
         </div>
       </div>
