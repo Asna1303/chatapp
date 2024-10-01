@@ -15,7 +15,7 @@ main{
     color: #fff;
     height: 100vh;
     width: 202px;
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 .top_section{
     display: flex;
